@@ -47,6 +47,11 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.txt_NgaySinh = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_Id = new System.Windows.Forms.TextBox();
+            this.btn_TaoId = new System.Windows.Forms.Button();
+            this.btn_RandomId = new System.Windows.Forms.Button();
+            this.btn_TG = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_SinhVien)).BeginInit();
             this.grb_ThayDoi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -217,11 +222,62 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(9, 411);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(64, 13);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "Random ID:";
+            // 
+            // txt_Id
+            // 
+            this.txt_Id.Location = new System.Drawing.Point(70, 406);
+            this.txt_Id.Name = "txt_Id";
+            this.txt_Id.Size = new System.Drawing.Size(196, 20);
+            this.txt_Id.TabIndex = 8;
+            // 
+            // btn_TaoId
+            // 
+            this.btn_TaoId.Location = new System.Drawing.Point(272, 406);
+            this.btn_TaoId.Name = "btn_TaoId";
+            this.btn_TaoId.Size = new System.Drawing.Size(75, 23);
+            this.btn_TaoId.TabIndex = 9;
+            this.btn_TaoId.Text = "Tạo";
+            this.btn_TaoId.UseVisualStyleBackColor = true;
+            this.btn_TaoId.Click += new System.EventHandler(this.btn_TaoId_Click);
+            // 
+            // btn_RandomId
+            // 
+            this.btn_RandomId.Location = new System.Drawing.Point(353, 406);
+            this.btn_RandomId.Name = "btn_RandomId";
+            this.btn_RandomId.Size = new System.Drawing.Size(93, 23);
+            this.btn_RandomId.TabIndex = 10;
+            this.btn_RandomId.Text = "Tạo Random";
+            this.btn_RandomId.UseVisualStyleBackColor = true;
+            this.btn_RandomId.Click += new System.EventHandler(this.btn_RandomId_Click);
+            // 
+            // btn_TG
+            // 
+            this.btn_TG.Location = new System.Drawing.Point(452, 405);
+            this.btn_TG.Name = "btn_TG";
+            this.btn_TG.Size = new System.Drawing.Size(90, 23);
+            this.btn_TG.TabIndex = 11;
+            this.btn_TG.Text = "Tạo theo giờ";
+            this.btn_TG.UseVisualStyleBackColor = true;
+            this.btn_TG.Click += new System.EventHandler(this.btn_TG_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(557, 414);
+            this.ClientSize = new System.Drawing.Size(554, 463);
+            this.Controls.Add(this.btn_TG);
+            this.Controls.Add(this.btn_RandomId);
+            this.Controls.Add(this.btn_TaoId);
+            this.Controls.Add(this.txt_Id);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.grb_ThayDoi);
             this.Controls.Add(this.dgv_SinhVien);
             this.Controls.Add(this.btn_Update);
@@ -236,6 +292,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -259,6 +316,11 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.TextBox txt_NgaySinh;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btn_TaoId;
+        private System.Windows.Forms.TextBox txt_Id;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btn_TG;
+        private System.Windows.Forms.Button btn_RandomId;
     }
 }
 

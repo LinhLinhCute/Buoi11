@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Drawing.Imaging;
 
+
 namespace _30_NgoThiThuyLinh_Buoi11
 {
     public partial class Form1 : Form
@@ -164,6 +165,27 @@ namespace _30_NgoThiThuyLinh_Buoi11
             pictureBox1.Image = Image.FromFile(@"HinhAnh\" + row.Cells["HinhAnh"].Value.ToString());
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
 
+        }
+        
+        private void btn_TaoId_Click(object sender, EventArgs e)
+        {
+            Guid Id = Guid.NewGuid();
+            txt_Id.Text = Id.ToString();
+        }
+
+        private void btn_TG_Click(object sender, EventArgs e)
+        {
+            string id = (DateTime.Now).ToString();
+            id = string.Join("", id.Split('/', ' ', ':'));
+            txt_Id.Text = id;
+            
+        }
+
+        private void btn_RandomId_Click(object sender, EventArgs e)
+        {
+            Random id = new Random();
+            id.Next(0, 100);
+            //txt_Id.Text = id.ToString();
         }
 
         
