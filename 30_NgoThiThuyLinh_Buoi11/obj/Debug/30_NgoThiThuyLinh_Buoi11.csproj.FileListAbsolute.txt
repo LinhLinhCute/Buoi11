@@ -7,3 +7,9 @@ E:\LuuDuLieuSinhVien\NgoThiThuyLinh\30_NgoThiThuyLinh_Buoi11\30_NgoThiThuyLinh_B
 E:\LuuDuLieuSinhVien\NgoThiThuyLinh\30_NgoThiThuyLinh_Buoi11\30_NgoThiThuyLinh_Buoi11\obj\Debug\30_NgoThiThuyLinh_Buoi11.csproj.GenerateResource.Cache
 E:\LuuDuLieuSinhVien\NgoThiThuyLinh\30_NgoThiThuyLinh_Buoi11\30_NgoThiThuyLinh_Buoi11\obj\Debug\30_NgoThiThuyLinh_Buoi11.exe
 E:\LuuDuLieuSinhVien\NgoThiThuyLinh\30_NgoThiThuyLinh_Buoi11\30_NgoThiThuyLinh_Buoi11\obj\Debug\30_NgoThiThuyLinh_Buoi11.pdb
+E:\LuuDuLieuSinhVien\NgoThiThuyLinh\30_NgoThiThuyLinh_Buoi11\30_NgoThiThuyLinh_Buoi11\bin\Debug\HinhAnh\SinhVien01.jpg
+E:\LuuDuLieuSinhVien\NgoThiThuyLinh\30_NgoThiThuyLinh_Buoi11\30_NgoThiThuyLinh_Buoi11\bin\Debug\HinhAnh\SInhVien02.jpg
+E:\LuuDuLieuSinhVien\NgoThiThuyLinh\30_NgoThiThuyLinh_Buoi11\30_NgoThiThuyLinh_Buoi11\bin\Debug\HinhAnh\SinhVien03.jpg
+E:\LuuDuLieuSinhVien\NgoThiThuyLinh\30_NgoThiThuyLinh_Buoi11\30_NgoThiThuyLinh_Buoi11\bin\Debug\HinhAnh\SinhVien04.jpg
+E:\LuuDuLieuSinhVien\NgoThiThuyLinh\30_NgoThiThuyLinh_Buoi11\30_NgoThiThuyLinh_Buoi11\bin\Debug\HinhAnh\SinhVien05.jpg
+E:\LuuDuLieuSinhVien\NgoThiThuyLinh\30_NgoThiThuyLinh_Buoi11\30_NgoThiThuyLinh_Buoi11\bin\Debug\HinhAnh\SinhVen06.jpg

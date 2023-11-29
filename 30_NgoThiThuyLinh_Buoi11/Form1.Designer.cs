@@ -46,9 +46,11 @@
             this.txt_DiaChi = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.txt_NgaySinh = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_SinhVien)).BeginInit();
             this.grb_ThayDoi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Them
@@ -98,9 +100,11 @@
             this.dgv_SinhVien.Name = "dgv_SinhVien";
             this.dgv_SinhVien.Size = new System.Drawing.Size(533, 148);
             this.dgv_SinhVien.TabIndex = 5;
+            this.dgv_SinhVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_SinhVien_CellContentClick);
             // 
             // grb_ThayDoi
             // 
+            this.grb_ThayDoi.Controls.Add(this.pictureBox1);
             this.grb_ThayDoi.Controls.Add(this.txt_NgaySinh);
             this.grb_ThayDoi.Controls.Add(this.txt_DiaChi);
             this.grb_ThayDoi.Controls.Add(this.txt_Lop);
@@ -204,6 +208,15 @@
             this.txt_NgaySinh.Size = new System.Drawing.Size(209, 20);
             this.txt_NgaySinh.TabIndex = 9;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(342, 49);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(147, 81);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -221,6 +234,7 @@
             this.grb_ThayDoi.ResumeLayout(false);
             this.grb_ThayDoi.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -244,6 +258,7 @@
         private System.Windows.Forms.TextBox txt_MaSV;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.TextBox txt_NgaySinh;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

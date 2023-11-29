@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Drawing.Imaging;
 
 namespace _30_NgoThiThuyLinh_Buoi11
 {
@@ -106,6 +107,7 @@ namespace _30_NgoThiThuyLinh_Buoi11
                 }
                 string Delete;
                 Delete = "Delete SinhVien where MaSV="+txt_MaSV.Text+"";
+                
                 SqlCommand cmd = new SqlCommand(Delete, consql);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Xóa thành công!");
@@ -143,6 +145,19 @@ namespace _30_NgoThiThuyLinh_Buoi11
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgv_SinhVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = new DataGridViewRow();
+            row = dgv_SinhVien.Rows[e.RowIndex];
+            pictureBox1.Image = Image.FromFile(@"HinhAnh\" + row.Cells["HinhAnh"].Value.ToString());
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
         }
 
         
