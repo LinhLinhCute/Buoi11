@@ -153,9 +153,14 @@ namespace _30_NgoThiThuyLinh_Buoi11
         }
 
         private void dgv_SinhVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+        { 
             DataGridViewRow row = new DataGridViewRow();
             row = dgv_SinhVien.Rows[e.RowIndex];
+            txt_MaSV.Text = Convert.ToString(row.Cells["MaSV"].Value);
+            txt_Ten.Text = Convert.ToString(row.Cells["TenSV"].Value);
+            txt_Lop.Text = Convert.ToString(row.Cells["MaLop"].Value);
+            txt_NgaySinh.Text = Convert.ToString(row.Cells["NgaySinh"].Value);
+            txt_DiaChi.Text = Convert.ToString(row.Cells["DiaChi"].Value);
             pictureBox1.Image = Image.FromFile(@"HinhAnh\" + row.Cells["HinhAnh"].Value.ToString());
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
 
