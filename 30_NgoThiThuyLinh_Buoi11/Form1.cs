@@ -158,6 +158,7 @@ namespace _30_NgoThiThuyLinh_Buoi11
             row = dgv_SinhVien.Rows[e.RowIndex];
             pictureBox1.Image = Image.FromFile(@"HinhAnh\" + row.Cells["HinhAnh"].Value.ToString());
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+
         }
 
         
